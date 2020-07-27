@@ -429,3 +429,104 @@ footer .container {
 }
 
 /* Fim da página home */
+
+
+/* Página About */ 
+
+.about-dobra-1 {
+  background-image: url('./assets/about/about-bg.png');
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-dobra-1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url("./assets/about/about-dobra2-bg.png");
+  height: 314px;
+  background-size: cover;
+  background-position: top center;
+}
+
+.about-dobra-2 {
+  background: #f6f6f6;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1px;
+}
+
+.about-dobra-2 .about-text {
+  max-width: 600px;
+}
+
+.about-main-text {
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  right: 290px;
+  top: 400px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.about-main-text .cta p {
+  padding: 0 16px;
+  margin: 0;
+}
+
+.about-main-text .cta p:last-child {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1500px) {
+  .about-main-text {
+    right: 250px;
+    top: 230px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .about-dobra-1 {
+    background-image: url('./assets/about/about-bg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .about-dobra-1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url("./assets/about/about-dobra2-bg.png");
+    height: 300px;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .about-main-text {
+    right: 0px;
+    top: 230px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-main-text {
+    top: 150px;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about-main-text {
+    top: 150px;
+    left: 100px;
+  }
+}
